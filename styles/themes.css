@@ -4,3 +4,110 @@
 ✦ theme-light — класс светлой темы
 ✦ не забудьте описать стили для изменения темы через медизапрос пользовательских предпочтений
 */
+
+/*light theme*/
+.theme-light {
+  --background-color: #fff;
+  --main-text-color: #000;
+  --main-border: 2px solid var(--main-color);
+  --background-image: 
+  repeating-linear-gradient(#d3d3d3, transparent 2px),
+  repeating-linear-gradient(90deg,#d3d3d3, transparent 2px),
+  linear-gradient(#e7e7e7 0.01%, #1a1a1a);
+  --stroke-color: #fff;
+  --main-color: #000;
+  --mix-filler-color_1: #fff;
+ --mix-text-color_1: #fff;
+ --mix-text-color_2: #fff;
+ --mix-button-color_2: #fff;
+}
+
+:root.theme-light {
+  --background-color: #fff;
+  --main-text-color: #000;
+  --main-border: 2px solid var(--main-color);
+  --background-image: 
+  repeating-linear-gradient(#d3d3d3, transparent 2px),
+  repeating-linear-gradient(90deg,#d3d3d3, transparent 2px),
+  linear-gradient(#e7e7e7 0.01%, #1a1a1a);
+  --stroke-color: #fff;
+  --main-color: #000;
+  --mix-filler-color_1: #fff;
+ --mix-text-color_1: #fff;
+ --mix-text-color_2: #fff;
+ --mix-button-color_2: #fff;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --background-color: #fff;
+    --main-text-color: #000;
+    --main-border: 2px solid var(--main-color);
+    --background-image: 
+    repeating-linear-gradient(#d3d3d3, transparent 2px),
+    repeating-linear-gradient(90deg,#d3d3d3, transparent 2px),
+    linear-gradient(#e7e7e7 0.01%, #1a1a1a);
+    --stroke-color: #fff;
+    --main-color: #000;
+    --mix-filler-color_1: #fff;
+ --mix-text-color_1: #fff;
+ --mix-text-color_2: #fff;
+ --mix-button-color_2: #fff;
+}
+}
+
+/*dark theme*/
+.theme-dark {
+  --background-color: #000;
+  --main-text-color: #00CC14;
+  --main-border: 2px solid var(--main-color);
+  --background-image: 
+  repeating-linear-gradient(#000, transparent 2px),
+  repeating-linear-gradient(90deg, #000, transparent 2px),
+  linear-gradient(#007f0c, #004306);
+  --stroke-color: #00CC14;
+  --main-color: #00CC14;
+  --heart-stroke: #000;
+  --mix-filler-color_1: #00CC14;
+ --mix-text-color_1: #00CC14;
+ --mix-text-color_2: #000;
+ --mix-button-color_2: #000;
+}
+
+:root.theme-dark {
+  --background-color: #000;
+  --main-text-color: #00CC14;
+  --main-border: 2px solid var(--main-color);
+  --background-image: 
+  repeating-linear-gradient(#000, transparent 2px),
+  repeating-linear-gradient(90deg, #000, transparent 2px),
+  linear-gradient(#007f0c, #004306);
+  --stroke-color: #00CC14;
+  --main-color: #00CC14;
+  --mix-filler-color_1: #00CC14;
+ --mix-text-color_1: #00CC14;
+ --mix-text-color_2: #000;
+ --mix-button-color_2: #000;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background-color: #000;
+    --main-text-color: #00CC14;
+    --main-border: 2px solid var(--main-color);
+    --background-image: 
+    repeating-linear-gradient(#000, transparent 2px),
+    repeating-linear-gradient(90deg, #000, transparent 2px),
+    linear-gradient(#007f0c, #004306);
+    --stroke-color: #00CC14;
+    --main-color: #00CC14;
+    --mix-filler-color_1: #00CC14;
+ --mix-text-color_1: #00CC14;
+ --mix-text-color_2: #000;
+ --mix-button-color_2: #000;
+  }
+
+  .page {
+    font-weight: 465;
+  }
+}
