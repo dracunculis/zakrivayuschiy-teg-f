@@ -78,7 +78,7 @@
 
 .theme-menu__button:disabled {
   opacity: 0.6;
-  transition: all 0.3s ease;
+  transition: 0.3s ease;
   pointer-events: none;
 }
 
@@ -418,16 +418,13 @@ dialog::backdrop {
 
   .save-button {
     width: 310px;
+    flex-direction: column;
   }
 
   .card-item {
     margin: 100px 0 50px;
   }
-
-  .save-button {
-    flex-direction: column;
-  }
-
+  
   .save-button .floppy-img {
     width: 28px;
     height: 28px;
