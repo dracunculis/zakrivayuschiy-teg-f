@@ -75,7 +75,7 @@
   animation-name: arrow;
   animation-iteration-count: infinite;
   animation-timing-function: ease-in-out;
-  animation-duration: .5s;
+  animation-duration: 0.5s;
 }
 
 .theme-menu__button:disabled {
@@ -90,7 +90,7 @@
 }
 
 .theme-menu__button:hover {
-  transition: color 0.5s;
+  transition: color 0.5s ease;
 }
 
 .theme-menu__button::after {
@@ -137,7 +137,7 @@
   font-size: 18px;
   line-height: 21.78px;
   text-align: left;
-  font-variation-settings: 'wght' 700;
+  font-variation-settings: "wght" 700;
 }
 
 .card-text {
@@ -225,6 +225,7 @@ dialog::backdrop {
   position: absolute;
   top: 25px;
   right: 25px;
+  z-index: 2;
   color: var(--stroke-color);
   font-family: var(--accent-font), Fantasy;
   font-size: 14px;
@@ -233,7 +234,6 @@ dialog::backdrop {
   text-shadow: 1px 0 #000;
   filter: opacity(50%);
   mix-blend-mode: hard-light;
-  z-index: 2;
 }
 
 @supports ((text-stroke: 1px #000) or (-webkit-text-stroke: 1px #000)) {
@@ -330,7 +330,7 @@ dialog::backdrop {
 
 .card__icon-button:focus-visible {
   border: var(--main-border);
-  transition: var(--smooth-transition);
+  transition: border var(--smooth-transition);
 }
 
 .card__icon-button {
@@ -426,7 +426,7 @@ dialog::backdrop {
   .logo {
     font-size: clamp(2.6875rem, 2.2946rem + 1.9643vw, 4.0625rem);
   }
-  
+
   .header-title {
     font-size: clamp(0.75rem, 0.5536rem + 0.9821vw, 1.4375rem);
   }
@@ -436,7 +436,6 @@ dialog::backdrop {
 }
 
 @media (width<=375px) {
-
   .save-button {
     flex-direction: column;
     width: 310px;
@@ -455,33 +454,33 @@ dialog::backdrop {
 /* фильтры для каритнок */
 
 .free-track-img img {
-filter:hue-rotate(90deg) blur(1px);
+  filter: hue-rotate(90deg) blur(1px);
 }
 
 .origin-img img {
-filter: grayscale(40%);
+  filter: grayscale(40%);
 }
 
 .doubts-img {
-filter:sepia(50%)
+  filter: sepia(50%);
 }
 
 .pp-img {
-filter: contrast(140%);
+  filter: contrast(140%);
 }
 
 .care-img {
-filter: brightness(110%);
+  filter: brightness(110%);
 }
 
 .strategy-img {
-filter: drop-shadow(0 0 0.5rem blue);
+  filter: drop-shadow(0 0 0.5rem blue);
 }
 
 .concentration-img {
-filter: invert(95%);
+  filter: invert(95%);
 }
 
 .nowadays-img {
-filter: saturate(80%);
+  filter: saturate(80%);
 }

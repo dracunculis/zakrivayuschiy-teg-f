@@ -22,8 +22,6 @@
   }
 }
 
-
-
 @keyframes move {
   from {
     translate: -100% 0%;
@@ -52,7 +50,6 @@
     scale: 1.5;
   }
 }
-
 
 @keyframes sparks-opacity {
   from {
