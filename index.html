@@ -12,19 +12,23 @@
     <link rel="stylesheet" href="./styles/animations.css" />
     <link rel="stylesheet" href="./styles/themes.css" />
     <link rel="icon" href="./images/favicon.ico" sizes="any" />
-    <link rel="icon" href="./images/favicon.svg" type="image/svg+xml" />
+    <link rel="icon" href="./svg/favicon.svg" type="image/svg+xml" />
 
     <script src="./scripts/set-theme.js"></script>
   </head>
   <body class="page">
     <header class="header">
-      <div class="logo">&lt/html&gt</div>
+      <div class="logo">&lt;/html&gt;</div>
       <h1 class="header-title">закрывающий тег</h1>
       <nav class="theme-menu header__theme-menu">
         <!-- Не меняйте разметку этого списка, иначе скрипты перестанут работать -->
         <ul class="theme-menu__list">
           <li class="theme-menu__item">
-            <button type="button" data-theme="dark" class="theme-menu__button theme-menu__button-text">
+            <button
+              type="button"
+              data-theme="dark"
+              class="theme-menu__button theme-menu__button-text"
+            >
               Темно
             </button>
           </li>
@@ -39,7 +43,11 @@
             </button>
           </li>
           <li class="theme-menu__item">
-            <button type="button" data-theme="light" class="theme-menu__button theme-menu__button-text">
+            <button
+              type="button"
+              data-theme="light"
+              class="theme-menu__button theme-menu__button-text"
+            >
               Светло
             </button>
           </li>
@@ -52,7 +60,7 @@
           Фритрек и нулевой спринт: Подготовка к работе
         </h2>
         <div class="labled-picture">
-          <p class="card-lable">&lt/html&gt</p>
+          <p class="card-lable">&lt;/html&gt;</p>
           <picture class="card-picture">
             <source srcset="./images/car-image.avif" type="image/avif" />
             <source srcset="./images/car-image.webp" type="image/webp" />
@@ -76,7 +84,7 @@
 
         <div class="like-buttons">
           <button class="card__icon-button">
-            <svg 
+            <svg
               class="like-icon"
               width="39"
               height="36"
@@ -125,9 +133,9 @@
         onclick="window['dialog-id'].showModal();"
         aria-controls="dialog-id"
       >
-      <svg class="floppy-img" viewBox="0 0 21 21">
-        <use href="/svg/floppy.svg#floppy"></use>
-      </svg>
+        <svg class="floppy-img" viewBox="0 0 21 21">
+          <use href="/svg/floppy.svg#floppy"></use>
+        </svg>
         <span class="save-button-text">Сохранить на память</span>
       </button>
 
@@ -136,7 +144,7 @@
           <svg class="floppy-img" viewBox="0 0 21 21">
             <use href="/svg/floppy.svg#floppy"></use>
           </svg>
-          
+
           <h3 class="pop-up-title">Вставьте дискету, чтобы продолжить</h3>
           <button
             class="button close-button"
@@ -146,7 +154,6 @@
             ок
           </button>
         </dialog>
-
       </div>
     </footer>
 

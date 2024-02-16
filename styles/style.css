@@ -38,21 +38,22 @@
   min-width: 100%;
   margin: 100px 0;
   border: 2px solid var(--main-text-color);
-  font-family: var(--accent-font);
+  font-family: var(--accent-font), Fantasy;
   text-transform: uppercase;
   background-color: var(--background-color);
 }
 
 .logo {
-  padding-top: 157px;
-  padding-bottom: 17px;
+  padding-top: clamp(7.5rem, 7.1479rem + 1.5023vw, 8.5rem);
   font-size: clamp(3.0625rem, 2.7104rem + 1.5023vw, 4.0625rem);
+  line-height: clamp(3.0625rem, 2.7104rem + 1.5023vw, 4.0625rem);
 }
 
 .header-title {
-  padding-top: 27px;
+  padding-top: 20px;
   padding-bottom: 17px;
   font-size: clamp(0.875rem, 0.6769rem + 0.8451vw, 1.4375rem);
+  line-height: clamp(0.875rem, 0.6769rem + 0.8451vw, 1.4375rem);
 }
 
 .theme-menu__button {
@@ -68,17 +69,17 @@
 .theme-menu__button:disabled::before {
   content: "▶";
   position: absolute;
-  left: -20px;
+  left: -15px;
   color: inherit;
   animation-name: arrow;
   animation-iteration-count: infinite;
   animation-timing-function: ease-in-out;
-  animation-duration: 1s; /* 0.5s */
+  animation-duration: .5s;
 }
 
 .theme-menu__button:disabled {
   opacity: 0.6;
-  transition: 0.3s ease;
+  transition: var(--smooth-transition);
   pointer-events: none;
 }
 
@@ -132,11 +133,11 @@
 }
 
 .card-title {
-  padding: 6px 12px;
-  font-variation-settings: 'wght' 700;
+  padding: 5px 10px;
   font-size: 18px;
   line-height: 21.78px;
   text-align: left;
+  font-variation-settings: 'wght' 700;
 }
 
 .card-text {
@@ -170,7 +171,7 @@
   outline: none;
 }
 
-.button .is-liked {
+.button:active {
   box-shadow: none;
   outline: none;
 }
@@ -221,7 +222,7 @@ dialog::backdrop {
   top: 25px;
   right: 25px;
   color: var(--stroke-color);
-  font-family: var(--accent-font);
+  font-family: var(--accent-font), Fantasy;
   font-size: 14px;
   line-height: 14px;
   text-transform: uppercase;
@@ -293,6 +294,17 @@ dialog::backdrop {
   mix-blend-mode: difference;
 }
 
+/*.animated-button::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  height: 100%;
+  background-color: var(--mix-filler-color_1);
+  animation: move 0.5s ease-in-out backwards;
+  translate: -100% 0%;
+  mix-blend-mode: difference;
+}*/
+
 .animated-button:hover::before {
   animation: move 0.5s ease-in-out forwards;
 }
@@ -313,7 +325,7 @@ dialog::backdrop {
 
 .card__icon-button:focus-visible {
   border: var(--main-border);
-  transition: 0.3 ease;
+  transition: var(--smooth-transition);
 }
 
 .card__icon-button {
