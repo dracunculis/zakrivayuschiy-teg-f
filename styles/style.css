@@ -80,7 +80,7 @@
 
 .theme-menu__button:disabled {
   opacity: 0.6;
-  transition: var(--smooth-transition);
+  transition: opacity var(--smooth-transition);
   pointer-events: none;
 }
 
@@ -233,6 +233,7 @@ dialog::backdrop {
   text-shadow: 1px 0 #000;
   filter: opacity(50%);
   mix-blend-mode: hard-light;
+  z-index: 2;
 }
 
 @supports ((text-stroke: 1px #000) or (-webkit-text-stroke: 1px #000)) {
