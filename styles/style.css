@@ -98,7 +98,6 @@
   display: block;
   width: 87%;
   height: 2px;
-  height: 1px;
   opacity: 0.6;
   background-color: var(--main-color);
   transition: transform 1s ease;
@@ -134,7 +133,7 @@
 
 .card-title {
   padding: 6px 12px;
-  font-weight: 700;
+  font-variation-settings: 'wght' 700;
   font-size: 18px;
   line-height: 21.78px;
   text-align: left;
@@ -168,6 +167,11 @@
 
 .button:focus:not(.close-button) {
   box-shadow: 2px 2px 0 var(--main-color);
+  outline: none;
+}
+
+.button .is-liked {
+  box-shadow: none;
   outline: none;
 }
 
@@ -218,11 +222,11 @@ dialog::backdrop {
   right: 25px;
   color: var(--stroke-color);
   font-family: var(--accent-font);
+  font-size: 14px;
   line-height: 14px;
   text-transform: uppercase;
   text-shadow: 1px 0 #000;
   filter: opacity(50%);
-  size: 14px;
   mix-blend-mode: hard-light;
 }
 
@@ -255,7 +259,7 @@ dialog::backdrop {
   grid-template-columns: min-content 1fr;
   grid-template-rows: 1fr 1fr;
   align-items: center;
-  row-gap: 30px;
+  row-gap: 29px;
   column-gap: 20px;
   width: 357px;
   height: 193px;
@@ -326,12 +330,12 @@ dialog::backdrop {
 }
 
 .like-icon:hover .core {
-  fill: #000;
+  fill: var(--main-color);
   transition: fill 0.3s linear;
 }
 
 .like-icon:hover .main-body {
-  fill: #000;
+  fill: var(--main-color);
   transition: fill 0.3s linear;
   transition-delay: 0.05s;
 }
@@ -417,14 +421,14 @@ dialog::backdrop {
 @media (width<=375px) {
 
   .save-button {
-    width: 310px;
     flex-direction: column;
+    width: 310px;
   }
 
   .card-item {
     margin: 100px 0 50px;
   }
-  
+
   .save-button .floppy-img {
     width: 28px;
     height: 28px;
