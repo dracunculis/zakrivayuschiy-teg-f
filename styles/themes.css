@@ -20,6 +20,7 @@
  --mix-text-color_1: #fff;
  --mix-text-color_2: #fff;
  --mix-button-color_2: #fff;
+ --main-font-weight: 400;
 }
 
 :root.theme-light {
@@ -36,6 +37,7 @@
  --mix-text-color_1: #fff;
  --mix-text-color_2: #fff;
  --mix-button-color_2: #fff;
+ --main-font-weight: 400;
 }
 
 @media (prefers-color-scheme: light) {
@@ -53,6 +55,7 @@
  --mix-text-color_1: #fff;
  --mix-text-color_2: #fff;
  --mix-button-color_2: #fff;
+ --main-font-weight: 400;
 }
 }
 
@@ -72,6 +75,7 @@
  --mix-text-color_1: #00CC14;
  --mix-text-color_2: #000;
  --mix-button-color_2: #000;
+ --main-font-weight: 465;
 }
 
 :root.theme-dark {
@@ -88,6 +92,7 @@
  --mix-text-color_1: #00CC14;
  --mix-text-color_2: #000;
  --mix-button-color_2: #000;
+ --main-font-weight: 465;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -105,9 +110,6 @@
  --mix-text-color_1: #00CC14;
  --mix-text-color_2: #000;
  --mix-button-color_2: #000;
-  }
-
-  .page {
-    font-weight: 465;
+ --main-font-weight: 465;
   }
 }

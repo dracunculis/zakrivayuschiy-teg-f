@@ -19,6 +19,7 @@
   margin: 0 auto;
   color: var(--main-text-color);
   font-family: var(--main-font), sans-serif;
+  font-weight: var(--main-font-weight);
   font-size: 18px;
   line-height: 21px;
   background-image: var(--background-image);
@@ -45,15 +46,15 @@
 
 .logo {
   padding-top: clamp(7.5rem, 7.1479rem + 1.5023vw, 8.5rem);
-  font-size: clamp(3.0625rem, 2.7104rem + 1.5023vw, 4.0625rem);
-  line-height: clamp(3.0625rem, 2.7104rem + 1.5023vw, 4.0625rem);
+  font-size: var(--logo__font-line-clamp);
+  line-height: var(--logo__font-line-clamp);
 }
 
 .header-title {
   padding-top: 20px;
   padding-bottom: 17px;
-  font-size: clamp(0.875rem, 0.6769rem + 0.8451vw, 1.4375rem);
-  line-height: clamp(0.875rem, 0.6769rem + 0.8451vw, 1.4375rem);
+  font-size: var(--header-title__font-line-clamp);
+  line-height: var(--header-title__font-line-clamp);
 }
 
 .theme-menu__button {
@@ -118,10 +119,9 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: start;
   gap: 13px;
-  padding-top: 9px;
-  padding-bottom: 25px;
+  padding: 9px 15px 25px 35px;
 }
 
 .card-item {
@@ -148,6 +148,10 @@
 
 .card__paragraph {
   padding-bottom: 27px;
+}
+
+.memo {
+  font-style: italic;
 }
 
 .card-picture img {
@@ -445,4 +449,38 @@ dialog::backdrop {
     width: 28px;
     height: 28px;
   }
+}
+
+/* фильтры для каритнок */
+
+.free-track-img img {
+filter:hue-rotate(90deg) blur(1px);
+}
+
+.origin-img img {
+filter: grayscale(40%);
+}
+
+.doubts-img {
+filter:sepia(50%)
+}
+
+.pp-img {
+filter: contrast(140%);
+}
+
+.care-img {
+filter: brightness(110%);
+}
+
+.strategy-img {
+filter: drop-shadow(0 0 0.5rem blue);
+}
+
+.concentration-img {
+filter: invert(95%);
+}
+
+.nowadays-img {
+filter: saturate(80%);
 }
