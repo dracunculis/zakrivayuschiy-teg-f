@@ -6,9 +6,9 @@
     <meta name="color-scheme" content="light dark" />
     <title>Закрывающий тег</title>
     <link rel="stylesheet" href="./fonts/fonts.css" />
-    <link rel="stylesheet" href="./styles/variables.css" />
     <link rel="stylesheet" href="./styles/globals.css" />
     <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="./styles/variables.css" />
     <link rel="stylesheet" href="./styles/animations.css" />
     <link rel="stylesheet" href="./styles/themes.css" />
     <link rel="icon" href="./images/favicon.ico" sizes="any" />
@@ -18,7 +18,7 @@
   </head>
   <body class="page">
     <header class="header">
-      <div class="logo">&lt;/html&gt;</div>
+      <a class="logo">&lt;/html&gt;</a>
       <h1 class="header-title">закрывающий тег</h1>
       <nav class="theme-menu header__theme-menu">
         <!-- Не меняйте разметку этого списка, иначе скрипты перестанут работать -->
@@ -54,7 +54,7 @@
         </ul>
       </nav>
     </header>
-    <main>
+    <main class="main">
       <article class="card-item">
         <h2 class="card-title">
           Фритрек и нулевой спринт: Подготовка к работе
@@ -77,7 +77,7 @@
             основами и настроиться на учёбу. И, возможно, подумать, как новые
             знания могут повлиять на ваше будущее.
           </p>
-          <p class="card__paragraph memo">
+          <p class="card__paragraph">
             Еду на работу на велосипеде. Еду быстро, потому что недавно решила
             научиться кое-чему новому и если приеду рано, то получится немного
             заглянуть в Практикум и начать разбираться, как же пишут эти
@@ -144,7 +144,7 @@
             ощущением скрываются более глубокие вопросы: с чего начать? а вдруг
             будет слишком сложно? что, если я не справлюсь?
           </p>
-          <p class="card__paragraph memo">
+          <p class="card__paragraph">
             Учусь не бояться IDE и чистого листа. Даже завела блокнотик для
             инсайтов. Писать код в блокнот - смешно!
           </p>
@@ -208,7 +208,7 @@
             могла быстро померкнуть и смениться ожиданием провала. Или вы,
             наоборот, могли вдохновиться успехами и поверить в себя.
           </p>
-          <p class="card__paragraph memo">
+          <p class="card__paragraph">
             "Ну да, иногда бывает немного непонятно и страшно, все ли осилю. Но
             я привыкла верить в себя!"
           </p>
@@ -274,7 +274,7 @@
             подвержены перфекционизму и вместо того, чтобы сделать идеально,
             старались просто сделать.
           </p>
-          <p class="card__paragraph memo">
+          <p class="card__paragraph">
             Перфекционизм - это не про меня. Но приходится. Привет, РР и
             разбегающиеся картинки!
           </p>
@@ -341,7 +341,7 @@
             Осваивать что-то новое легче, когда рядом есть единомышленники, не
             правда ли?
           </p>
-          <p class="card__paragraph memo">
+          <p class="card__paragraph">
             Кошки проявляют интерес к нашим WS, но пока еще мало понимают.
             Поэтому так важна поддержка однокагорчан, друзей, наставника и
             куратора. Лучи любви и добра им!
@@ -406,7 +406,7 @@
             вам могло показаться, что решения просто иссякли. Значит, пришло
             время посмотреть на задачу под другим углом.
           </p>
-          <p class="card__paragraph memo">
+          <p class="card__paragraph">
             Иногда проще, когда есть четкое решение. А когда их много и ты юн -
             бывает нелегко. Нужно экспериментировать и гуглить.
           </p>
@@ -478,7 +478,7 @@
             В такие моменты очень нужна концентрация. Вспомните, откуда вы её
             черпали.
           </p>
-          <p class="card__paragraph memo">
+          <p class="card__paragraph">
             Хочется все успеть и делать одновременно. А не помыть ли пол? А
             можно тренить и писать код одновременно? - Вдох, выдох, отдых, лес,
             приятный ритуал и любовь к тому, что делаешь.
@@ -546,7 +546,7 @@
             это тот случай, когда важен сам процесс познания. Ведь часто путь —
             и есть результат.
           </p>
-          <p class="card__paragraph memo">
+          <p class="card__paragraph">
             Очень хочется все успеть. И в отпуск пойти, и проект сдать. Все
             свободное время посвящаю проекту и учебе. Начинаю немного увереннее
             себя чувствовать (ну а где то не очень). Нужна практика. Необъятное
@@ -614,13 +614,9 @@
           </svg>
 
           <h3 class="pop-up-title">Вставьте дискету, чтобы продолжить</h3>
-          <button
-            class="button close-button"
-            type="button"
-            onclick="window['dialog-id'].close()"
-          >
-            ок
-          </button>
+          <form method="dialog" class="close-form">
+            <button class="button close-button animated-button">ок</button>
+          </form>
         </dialog>
       </div>
     </footer>

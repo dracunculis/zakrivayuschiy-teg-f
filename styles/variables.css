@@ -17,6 +17,7 @@
   --mix-button-color_2: #fff;
   --smooth-transition: 0.3s ease;
   --main-font-weight: 400;
+  --card-title-font-weight: "wght" 700;
   --logo__font-line-clamp: clamp(3.0625rem, 2.7104rem + 1.5023vw, 4.0625rem);
   --header-title__font-line-clamp: clamp(
     0.875rem,
